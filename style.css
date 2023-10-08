@@ -1,0 +1,12 @@
+canvas {
+  display: flex;
+}
+
+.pixel {
+  max-width: 100px;
+  border: 1px solid black;
+}
+
+.pixel:hover {
+  background-color: red;
+}

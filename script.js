@@ -30,7 +30,7 @@ function selectCustomColor() {
 }
 
 createCanvas(8);
-let fillColor = "red";
+let fillColor = "black";
 let mouseDown = false;
 body.onmousedown = () => (mouseDown = true);
 body.onmouseup = () => (mouseDown = false);

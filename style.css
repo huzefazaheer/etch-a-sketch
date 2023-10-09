@@ -34,6 +34,10 @@ h1 {
   box-sizing: border-box;
 }
 
+.pixel:hover {
+  background-color: whitesmoke;
+}
+
 button {
   background-color: whitesmoke;
   border: 1px solid black;

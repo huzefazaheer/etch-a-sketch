@@ -1,10 +1,14 @@
-canvas {
+.canvas {
   display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+  align-content: flex-start;
 }
 
 .pixel {
-  max-width: 100px;
   border: 1px solid black;
+  box-sizing: border-box;
 }
 
 .pixel:hover {

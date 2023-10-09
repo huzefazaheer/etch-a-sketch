@@ -1,6 +1,7 @@
 const body = document.body;
 const canvas = document.querySelector(".canvas");
 const selection = document.querySelector(".selection");
+const gridbtn = document.querySelector(".showgrid");
 
 function createCanvas(size) {
   for (let i = 0; i < size ** 2; i++) {
@@ -40,10 +41,26 @@ selection.addEventListener("click", (e) => {
       break;
     case "green":
       fillColor = "green";
+      break;
     case "custom":
       fillColor = selectCustomColor();
       break;
     default:
       return;
+  }
+});
+
+let toggled = false;
+gridbtn.addEventListener("click", (e) => {
+  if (!toggled) {
+    for (const div of canvas.children) {
+      div.style.borderStyle = "hidden";
+    }
+    toggled = true;
+  } else {
+    for (const div of canvas.children) {
+      div.style.borderStyle = "solid";
+    }
+    toggled = false;
   }
 });

@@ -7,10 +7,6 @@
 }
 
 .pixel {
-  border: 1px solid black;
+  border: 0.5px solid black;
   box-sizing: border-box;
-}
-
-.pixel:hover {
-  background-color: red;
 }

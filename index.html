@@ -9,13 +9,20 @@
   </head>
   <body>
     <h1>Etch A Sketch</h1>
-    <div class="canvas"></div>
-    <div class="selection">
-      <button>red</button><button>white</button><button>black</button
-      ><button>green</button><button>custom</button>
+    <div class="content">
+      <div class="dummy"></div>
+      <div class="canvas"></div>
+      <div class="control">
+        <h3>Controls</h3>
+        <div class="selection">
+          <button id="red"></button><button id="white"></button
+          ><button id="black"></button><button id="green"></button>
+        </div>
+        <button class="customsel">custom color</button>
+        <button class="showgrid">toggle grid</button>
+        <button class="clear">clear</button>
+        <button class="newcanvas">create new canvas</button>
+      </div>
     </div>
-    <button class="showgrid">toggle grid</button>
-    <button class="clear">clear</button>
-    <button class="newcanvas">make new canvas</button>
   </body>
 </html>

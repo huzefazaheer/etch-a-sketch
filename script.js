@@ -4,6 +4,7 @@ const selection = document.querySelector(".selection");
 const gridbtn = document.querySelector(".showgrid");
 const clearbtn = document.querySelector(".clear");
 const newcanvasbtn = document.querySelector(".newcanvas");
+const customcolorbtn = document.querySelector(".customsel");
 
 function createCanvas(size) {
   for (let i = 0; i < size ** 2; i++) {
@@ -58,7 +59,7 @@ newcanvasbtn.addEventListener("click", (e) => {
 });
 
 selection.addEventListener("click", (e) => {
-  switch (e.target.innerText) {
+  switch (e.target.id) {
     case "red":
       fillColor = "red";
       break;
@@ -70,9 +71,6 @@ selection.addEventListener("click", (e) => {
       break;
     case "green":
       fillColor = "green";
-      break;
-    case "custom":
-      fillColor = selectCustomColor();
       break;
     default:
       return;
@@ -98,4 +96,8 @@ clearbtn.addEventListener("click", (e) => {
   for (const div of canvas.children) {
     div.style.backgroundColor = "white";
   }
+});
+
+customcolorbtn.addEventListener("click", () => {
+  fillColor = selectCustomColor();
 });

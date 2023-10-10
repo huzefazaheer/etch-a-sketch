@@ -1,7 +1,4 @@
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 2%;
   background-color: whitesmoke;
 }
@@ -10,6 +7,35 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-size: 3em;
   font-weight: normal;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  font-weight: normal;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+
+.control {
+  min-height: 40vh;
+  flex-basis: 240px;
+  background-color: white;
+  padding: 0 2rem 2rem 2rem;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .canvas {
@@ -39,11 +65,61 @@ h1 {
 }
 
 button {
-  background-color: whitesmoke;
+  background-color: white;
   border: 1px solid black;
   margin: 2px;
   border-radius: 2px;
-  padding: 0 4px;
+  padding: 1px 4px;
   text-align: center;
   font-family: Helvetica, sans-serif;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: whitesmoke;
+}
+
+.selection > button {
+  width: 25px;
+  height: 25px;
+  margin: 0 9px;
+}
+
+#red {
+  background-color: rgb(255, 71, 71);
+}
+
+#black {
+  background-color: rgb(109, 104, 104);
+}
+
+#white {
+  background-color: rgb(248, 250, 227);
+}
+
+#green {
+  background-color: rgb(80, 207, 80);
+}
+
+.newcanvas {
+  padding: 2px 1px;
+  flex: 0 0 100%;
+}
+
+.showgrid {
+  flex: 0 0 100%;
+}
+
+.customsel {
+  flex: 0 0 100%;
+}
+
+.clear {
+  flex: 0 0 100%;
+}
+
+.dummy {
+  flex-basis: 240px;
 }
